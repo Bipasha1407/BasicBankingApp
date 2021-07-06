@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <ImageView
+        android:id="@+id/bank_img"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/tarok_bank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        android:background="@drawable/background"
+        android:text="BHARAT BANK"
+        android:textAlignment="center"
+        android:textColor="@color/button_font"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_img" />
+
+    <Button
+        android:id="@+id/to_customer_list"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/mycustom"
+        android:text="View Customer"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name" />
+
+    <Button
+        android:id="@+id/to_transaction"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mycustom"
+        android:text="View Transaction"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_customer_list"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

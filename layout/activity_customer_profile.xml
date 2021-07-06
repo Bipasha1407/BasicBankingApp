@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CustomerProfile">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Account Details"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/acc_pic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/customer_bg"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_pic"
+        android:layout_marginTop="30dp"
+        android:text="Customer Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/name_got"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_pic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="viewStart"/>
+
+    <TextView
+        android:id="@+id/acc_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:text="Account Number"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/acc_no_got"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"/>
+
+    <TextView
+        android:id="@+id/acc_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_no"
+        android:layout_marginTop="20dp"
+        android:text="Account Balance"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/acc_balance_got"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_no"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"/>
+
+     <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_balance"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email_got"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acc_balance"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:padding="2dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/phone_got"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="viewStart"/>
+
+    <Button
+        android:id="@+id/transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mycustom"
+        android:text="Transfer Money" />
+
+
+</RelativeLayout>

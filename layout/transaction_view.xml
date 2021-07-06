@@ -1,0 +1,89 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="#C1DDF3"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:contentPadding="4dp">
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+
+
+        <TextView
+            android:id="@+id/from_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="from acc"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/money_to"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/from_acc"
+            android:src="@drawable/ic_amt_transfer" />
+
+
+        <TextView
+            android:id="@+id/to_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/money_to"
+            android:text="to acc"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/to_acc"
+            android:layout_alignParentEnd="true"
+            android:text="status"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/from_acc"
+            android:text="700"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/-"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@id/from_acc"
+            android:layout_toRightOf="@id/amt"/>
+
+        <TextView
+            android:id="@+id/transfer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/to_acc"
+            android:layout_marginLeft="40dp"
+            android:layout_toEndOf="@id/amt"
+            android:text="12:00pm"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
