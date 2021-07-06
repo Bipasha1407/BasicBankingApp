@@ -3,6 +3,7 @@ Sparks Foundation Internship Project : Basic Banking App
 An Mobile Application used to transfer money between multiple users.
 
 Front-end - Kotlin, XML
+
 Database -  SQLite
 
 Database contains two Tables- Customer Table & Transaction History Table
